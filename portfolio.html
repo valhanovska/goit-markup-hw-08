@@ -49,8 +49,17 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="menu-btn is-open" aria-expanded="false" aria-controls="menu-nav" data-menu-button>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="menu__icon-cross" href="./images/icons.svg#icon-menu"></use>
+          <use class="menu__icon-menu" href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
     </div>
+
   </header>
+
+
 
   <main>
 
@@ -76,7 +85,7 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__card">
-                  <img src="./images/port1.jpg" alt="Наши разработчики" width="370" height="294" />
+                  <img src="./images/portfolio/port1.jpg" alt="Наши разработчики" width="370" height="294" />
                   <p class="projects__card--hidden">Ресурс предлагает комплексные предложения с разным
                     уровнем функционала и
                     сервисов. Все это позволит посетителю
@@ -93,7 +102,7 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__card">
-                  <img src="./images/port2.jpg" alt="Постер для игры в баскетбол" width="370" height="294" />
+                  <img src="./images/portfolio/port2.jpg" alt="Постер для игры в баскетбол" width="370" height="294" />
                   <p class="projects__card--hidden">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и
                     сервисов. Все это позволит
@@ -110,7 +119,7 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__card">
-                  <img src="./images/port3.jpg" alt="Постер для ресторана" width="370" height="294" />
+                  <img src="./images/portfolio/port3.jpg" alt="Постер для ресторана" width="370" height="294" />
                   <p class="projects__card--hidden">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и
                     сервисов. Все это позволит
@@ -128,7 +137,7 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__card projects__card">
-                  <img src="./images/port4.jpg" alt="Постер с наушниками" width="370" height="294" />
+                  <img src="./images/portfolio/port4.jpg" alt="Постер с наушниками" width="370" height="294" />
                   <p class="projects__card--hidden">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и
                     сервисов. Все это позволит
@@ -146,7 +155,7 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__card">
-                  <img src="./images/port5.jpg" alt="Постер с коробками" width="370" height="294" />
+                  <img src="./images/portfolio/port5.jpg" alt="Постер с коробками" width="370" height="294" />
                   <p class="projects__card--hidden">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и
                     сервисов. Все это позволит
@@ -164,7 +173,8 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__card">
-                  <img src="./images/port6.jpg" alt="Постер вдохновение не имеет границ" width="370" height="294" />
+                  <img src="./images/portfolio/port6.jpg" alt="Постер вдохновение не имеет границ" width="370"
+                    height="294" />
                   <p class="projects__card--hidden">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и
                     сервисов. Все это позволит
@@ -182,7 +192,7 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__card">
-                  <img src="./images/port7.jpg" alt="Постер с книгой" width="370" height="294" />
+                  <img src="./images/portfolio/port7.jpg" alt="Постер с книгой" width="370" height="294" />
                   <p class="projects__card--hidden">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и
                     сервисов. Все это позволит
@@ -200,7 +210,7 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__card">
-                  <img src="./images/port8.jpg" alt="Постер с ярлыком" width="370" height="294" />
+                  <img src="./images/portfolio/port8.jpg" alt="Постер с ярлыком" width="370" height="294" />
                   <p class="projects__card--hidden">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и
                     сервисов. Все это позволит
@@ -218,7 +228,7 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__card">
-                  <img src="./images/port9.jpg" alt="Постер растущий бизнес" width="370" height="294" />
+                  <img src="./images/portfolio/port9.jpg" alt="Постер растущий бизнес" width="370" height="294" />
                   <p class="projects__card--hidden">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и
                     сервисов. Все это позволит
@@ -316,6 +326,40 @@
       </div>
     </div>
   </footer>
+
+  <!-- menu -->
+
+  <div class="menu" data-menu>
+    <div class="menu-nav" id="menu-nav">
+      <div>
+        <ul class="menu-nav__list list">
+          <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link">Студия</a></li>
+          <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link current">Портфолио</a></li>
+          <li class="menu-nav__item"><a href="" class="menu-nav__link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="menu-contacts__group">
+        <div class="menu-contacts__data">
+          <ul class="menu-contacts list">
+            <li class="menu-contacts__item"><a href="tel:+380961111111" class="menu-contacts__mail">+38 096 111 11
+                11</a></li>
+            <li><a href="mailto:info@devstudio.com" class="menu-contacts__tel">info@devstudio.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="menu-contacts__soc list">
+            <li><a href="" class="menu-contacts__social">Instagram</a></li>
+            <li><a href="" class="menu-contacts__social">Twitter</a></li>
+            <li><a href="" class="menu-contacts__social">Facebook</a></li>
+            <li><a href="" class="menu-contacts__social menu-contacts__social--last">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
