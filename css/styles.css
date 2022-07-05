@@ -11,11 +11,11 @@
   box-sizing: border-box;
 } */
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 
 /* :root {
   --primary-text-color: #757575;

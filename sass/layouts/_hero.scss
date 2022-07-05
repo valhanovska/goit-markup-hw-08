@@ -1,25 +1,58 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: rgba(47, 48, 58, 1);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: rgba(47, 48, 58, 1);
 }
 
 .hero__bgi {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, var(--hero-grad), rgba(00, 00, 00, 0)),
-        url(../images/hero/bgimg.jpg);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to right, var(--hero-grad), var(--hero-grad)),
+    url(../images/hero/bgimg_sm.jpg);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, var(--hero-grad), var(--hero-grad)),
+      url(../images/hero/bgimg_sm@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, var(--hero-grad), var(--hero-grad)),
+      url(../images/hero/bgimg_md.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, var(--hero-grad), var(--hero-grad)),
+        url(../images/hero/bgimg_md@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to right, var(--hero-grad), var(--hero-grad)),
+      url(../images/hero/bgimg_lg.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, var(--hero-grad), var(--hero-grad)),
+        url(../images/hero/bgimg_lg@2x.jpg);
+    }
+  }
 }
 
 .hero__title {
-    margin-bottom: 30px;
-    color: var(--primary-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-    font-weight: 900;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  }
 }

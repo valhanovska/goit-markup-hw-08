@@ -1,5 +1,13 @@
 .feature__item {
+width: 450px;
+
+@media screen and (min-width: 768px) {
+    width: 354px;
+}
+
+@media screen and (min-width: 1200px) {
     width: 270px;
+}
 }
 
 .feature__icon {
@@ -22,6 +30,10 @@
     color: var(--title-text-color);
     line-height: 1.14;
     text-transform: uppercase;
+    
+@media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .feature__text {
